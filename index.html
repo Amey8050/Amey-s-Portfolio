@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amey - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- -----------------FONTS------------ -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- -----------------FONTS------------ -->
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Amey's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contactme.html">ContactMe</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hello, I'm <span class="purple">Amey patil</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Amey-Patil-Resume.pdf" download class="download-btn" id="downloadLink">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/Amey8050">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <script>
+            document.getElementById("downloadLink").addEventListener("click", function (event) {
+                event.preventDefault();
+
+                const userConfirmed = confirm(" Do you want to download resume?");
+
+                if (userConfirmed) {
+                    // Proceed with the download
+                    window.location.href = this.href;
+                }
+            });
+        </script>
+        <hr>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <center>
+                    <h3>Amey Developer Portfolio</h3>
+                </center>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <center>
+                <strong>&copy; 2025 Amey'sPortfolio | All rights reserved</strong>
+            </center>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Front-End', 'Back-End', 'Fullstack-Developer'],
+            typeSpeed: 100,
+        });
+    </script>
+
+</body>
+
+</html>

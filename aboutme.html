@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Amey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <header class="bg-gradient-to-r from-purple-700 to-pink-600 text-white">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6 relative">
+      <div class="text-xl font-bold">Amey's Portfolio</div>
+
+      <button id="menu-btn" class="text-3xl md:hidden focus:outline-none">
+        &#9776;
+      </button>
+
+      <ul id="menu" class="hidden md:flex space-x-6 flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-black/40 backdrop-blur-md
+            md:bg-transparent text-center md:text-left py-4 md:py-0">
+        <li><a href="index.html" class="block py-2 md:py-0 hover:text-gray-300 "> Home </a></li>
+        <li><a href="aboutme.html" class="block py-2 md:py-0 hover:text-gray-300">About</a></li>
+        <li><a href="service.html" class="block py-2 md:py-0 hover:text-gray-300">Services</a></li>
+        <li><a href="project.html" class="block py-2 md:py-0 hover:text-gray-300">Projects</a></li>
+        <li><a href="contactme.html" class="block py-2 md:py-0 hover:text-gray-300">Contact Me</a></li>
+      </ul>
+    </nav>
+
+
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </header>
+
+  <section class="bg-gray-900 ">
+    <div class="container mx-auto flex flex-col md:flex-row items-center py-16 px-6 space-y-6 md:space-y-0">
+
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-bold text-purple-600">About Me</h1>
+        <p class="mt-6 text-white leading-relaxed">
+          Hi, I'm Amey Patil, a Computer Science Engineering student with a passion for Web Development. I love
+          creating interactive, user-friendly websites that focus on delivering great user experiences. Whether it's
+          building from scratch or working with frameworks like React and Node.js, I love transforming ideas into
+          functional web designs.
+
+        </p>
+        <p class="mt-4 text-white leading-relaxed">
+          When I’m not coding, you can find me playing video games, surfing on YouTube, or exploring design trends and
+          discovering new tools to enhance my work.
+        </p>
+        <button onclick="location.href='contactme.html'"
+          class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-700">
+          Contact Me
+        </button>
+      </div>
+
+      <div class="md:w-1/2 flex justify-center">
+        <img src="profile1.jpg" alt="Profile Picture" class="w-2/3 rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+  <hr>
+
+
+  <section class="bg-gray-900 py-16 px-16">
+    <div class="container mx-auto px-6 ">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-600 mb-12">My Skills</h2>
+
+
+      <div class="flex flex-wrap gap-4">
+
+        <!-- Skill Card -->
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/html.png" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/css.jpg" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/javascript.png" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex items-center justify-center p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/node1.jpg" alt="Node.js Logo" class="w-full h-full object-contain" />
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/react.png" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex p-0 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/expressjs-b.png" alt="Express.js Logo" class="w-full h-full object-contain" />
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/nextjs.png" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex p-0 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/mongodb.png" alt="MongoDB Logo" class="w-full h-full object-contain" />
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/git.png" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/python.jpg" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-lg w-32 h-32 flex  p-4 transform transition duration-300 hover:shadow-2xl hover:scale-105 text-center mx-auto">
+          <img src="/logo/c++.png" alt="SEO Logo" class="w-full h-full object-cover mb-2">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-gradient-to-r from-purple-700 to-pink-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+      <p>&copy; 2025 Amey Patil | All Rights Reserved.</p>
+      <div class="flex justify-center mt-4 space-x-6">
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/ameypatil8050"
+          class="flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+
+
+        <!-- GitHub -->
+        <a href="https://github.com/Amey8050" class="flex items-center space-x-2 text-gray-300 hover:text-gray-500">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://x.com/amey8050" class="flex items-center space-x-2 text-sky-400 hover:text-sky-600">
+          <i class="fab fa-twitter text-2xl"></i>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:amey8050@gmail.com" class="flex items-center space-x-2 text-red-500 hover:text-yellow-500">
+          <i class="fas fa-envelope text-2xl"></i>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
